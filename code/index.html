@@ -3,37 +3,114 @@
 <html>
 
     <style>
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
         body {
             background-color: darkgrey;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 20px;
+            margin: 20px;
         }
 
         #welcome-section {
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #welcome-section h1 {
+            font-size: 30px;
         }
 
         #navbar {
             position: fixed;
             display: flex;
+            justify-content: flex-end;
             background-color: #fff;
             top: 0;
             left: 0;
             width: 100%;
+            text-transform: uppercase;
         }
 
         #navbar ul {
             display: flex;
         }
 
+        #navbar li {
+            list-style: none;
+            margin: 10px;
+        }
+
+        #logo {
+            justify-self: flex-start;
+            text-transform: uppercase;
+            margin: 10px;
+        }
+
+        #projects ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        #projects li {
+            background-color: #fff;
+            padding: 1em;
+            list-style: none;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin: 0.5em 0 1em 0;
+        }
+
+        @media screen and (max-width: 800px) {
+            #projects ul {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #projects ul {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <title>Magnus is coding</title>
     </head>
 
     <body>
 
         <nav id="navbar">
-            <span id="logo">Magnus is coding</span>
+            <span id="logo">magnusd</span>
             <ul>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -47,6 +124,8 @@
         <section id="projects">
             <h2>Some of my projects</h2>
             <ul>
+                <li class="project-tile"><a href="memory">Memory Game</a> - My first attempt at React</li>
+                <li class="project-tile"><a href="memory">Memory Game</a> - My first attempt at React</li>
                 <li class="project-tile"><a href="memory">Memory Game</a> - My first attempt at React</li>
             </ul>
         </section>
