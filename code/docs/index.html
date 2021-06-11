@@ -30,9 +30,64 @@
             font-size: 20px;
         }
 
+        main {
+            padding: 2em 10%;
+        }
 
+        main header {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 1em 0 0.5em 0;
+        }
 
-        @media screen and (max-width: 800px) {
+        main p {
+            margin-bottom: 0.7em;
+        }
+
+        main code {
+            background-color: #caf0f8;
+            padding: 1em;
+            margin-bottom: 0.7em;
+            font-family: monospace;
+            display: block;
+        }
+
+        main li {
+            margin: 0 0 0.5em 1.2em;
+        }
+
+        #navbar {
+            border-right: 1.5px solid #999;
+            height: 100vh;
+        }
+
+        #navbar header {
+            padding: 1em;
+            font-weight: bold;
+            border-bottom: 1px solid #999;
+            text-transform: uppercase;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 1em;
+            border-bottom: 1px solid #999;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: #023e8a;
+        }        
+
+        @media screen and (min-width: 800px) {
+            #navbar {
+                width: 30%;
+                position: fixed;
+            }
+            main {
+                width: 55%;
+                float: right;
+            }
         }
 
     </style>
@@ -44,6 +99,57 @@
     </head>
 
     <body>
+
+        <nav id="navbar">
+            <header>Documentation</header>
+            <ul>
+                <li><a href="#section_1" class="nav-link">Section 1</a></li>
+                <li><a href="#section_2" class="nav-link">Section 2</a></li>
+                <li><a href="#section_3" class="nav-link">Section 3</a></li>
+                <li><a href="#section_4" class="nav-link">Section 4</a></li>
+                <li><a href="#section_5" class="nav-link">Section 5</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="section_1">
+                <header>Section 1</header>
+                <p>Some text</p>
+                <code>/* Some code */</code>
+                <p>Some text</p>
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                    <li>List item 4</li>
+                    <li>List item 5</li>
+                </ul>
+            </section>
+            <section class="main-section" id="section_2">
+                <header>Section 2</header>
+                <p>Some text</p>
+                <code>/* Some code */</code>
+                <p>Some text</p>
+            </section>
+            <section class="main-section" id="section_3">
+                <header>Section 3</header>
+                <p>Some text</p>
+                <code>/* Some code */</code>
+                <p>Some text</p>
+            </section>
+            <section class="main-section" id="section_4">
+                <header>Section 4</header>
+                <p>Some text</p>
+                <code>/* Some code */</code>
+                <p>Some text</p>
+            </section>
+            <section class="main-section" id="section_5">
+                <header>Section 5</header>
+                <p>Some text</p>
+                <code>/* Some code */</code>
+                <p>Some text</p>
+            </section>
+        </main>
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
