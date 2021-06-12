@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <ellipse fill="none" stroke="#ff595e" stroke-width="7" cx="100" cy="100" rx="94" ry="94"></ellipse>
+    <ellipse fill="none" stroke="#ffca3a" stroke-width="7" cx="100" cy="100" rx="87" ry="87"></ellipse>
+    <ellipse fill="none" stroke="#8ac926" stroke-width="7" cx="100" cy="100" rx="80" ry="80"></ellipse>
+    <ellipse fill="none" stroke="#1982c4" stroke-width="7" cx="100" cy="100" rx="73" ry="73"></ellipse>
+    <ellipse fill="none" stroke="#6a4c93" stroke-width="7" cx="100" cy="100" rx="66" ry="66"></ellipse>
+</svg>
